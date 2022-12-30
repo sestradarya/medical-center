@@ -1,0 +1,247 @@
+.main-card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400%;
+    transition: 1s;
+}
+
+#two:checked~.main-card {
+    margin-left: -100%;
+}
+
+#three:checked~.main-card {
+    margin-left: -200%;
+}
+
+#four:checked~.main-card {
+    margin-left: -300%;
+}
+
+#five:checked~.main-card {
+    margin-left: -400%;
+}
+
+#six:checked~.main-card {
+    margin-left: -500%;
+}
+
+#seven:checked~.main-card {
+    margin-left: -600%;
+}
+
+#eight:checked~.main-card {
+    margin-left: -700%;
+}
+
+#nine:checked~.main-card {
+    margin-left: -800%;
+}
+
+
+.main-card .cards {
+    width: calc(100% / 4 - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+
+.main-card .cards .card {
+    width: calc(100% / 3 - 10px);
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+.main-card .cards .card:hover {
+    transform: translateY(-15px);
+}
+
+
+.button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: #B0B08F;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button label.active {
+    width: 35px;
+}
+
+
+#one:checked~.button .one {
+    width: 35px;
+}
+
+#one:checked~.button .two,
+#one:checked~.button .three,
+#one:checked~.button .four,
+#one:checked~.button .five,
+#one:checked~.button .six,
+#one:checked~.button .seven,
+#one:checked~.button .eight,
+#one:checked~.button .nine {
+    width: 15px;
+}
+
+#two:checked~.button .two {
+    width: 35px;
+}
+
+#two:checked~.button .one,
+#two:checked~.button .three,
+#two:checked~.button .four,
+#two:checked~.button .five,
+#two:checked~.button .six,
+#two:checked~.button .seven,
+#two:checked~.button .eight,
+#two:checked~.button .nine {
+    width: 15px;
+}
+
+#three:checked~.button .three {
+    width: 35px;
+}
+
+#three:checked~.button .one,
+#three:checked~.button .two,
+#three:checked~.button .four,
+#three:checked~.button .five,
+#three:checked~.button .six,
+#three:checked~.button .seven,
+#three:checked~.button .eight,
+#three:checked~.button .nine {
+    width: 15px;
+}
+
+#four:checked~.button .four {
+    width: 35px;
+}
+
+#four:checked~.button .one,
+#four:checked~.button .two,
+#four:checked~.button .three,
+#four:checked~.button .five,
+#four:checked~.button .six,
+#four:checked~.button .seven,
+#four:checked~.button .eight,
+#four:checked~.button .nine {
+    width: 15px;
+}
+
+#five:checked~.button .five {
+    width: 35px;
+}
+
+#five:checked~.button .one,
+#five:checked~.button .two,
+#five:checked~.button .three,
+#five:checked~.button .four,
+#five:checked~.button .six,
+#five:checked~.button .seven,
+#five:checked~.button .eight,
+#five:checked~.button .nine {
+    width: 15px;
+}
+
+#six:checked~.button .six {
+    width: 35px;
+}
+
+#six:checked~.button .one,
+#six:checked~.button .two,
+#six:checked~.button .three,
+#six:checked~.button .four,
+#six:checked~.button .five,
+#six:checked~.button .seven,
+#six:checked~.button .eight,
+#six:checked~.button .nine {
+    width: 15px;
+}
+
+#seven:checked~.button .seven {
+    width: 35px;
+}
+
+#seven:checked~.button .one,
+#seven:checked~.button .two,
+#seven:checked~.button .three,
+#seven:checked~.button .four,
+#seven:checked~.button .five,
+#seven:checked~.button .six,
+#seven:checked~.button .eight,
+#seven:checked~.button .nine {
+    width: 15px;
+}
+
+
+#eight:checked~.button .eight {
+    width: 35px;
+}
+
+#eight:checked~.button .one,
+#eight:checked~.button .two,
+#eight:checked~.button .three,
+#eight:checked~.button .four,
+#eight:checked~.button .five,
+#eight:checked~.button .six,
+#eight:checked~.button .seven,
+#eight:checked~.button .nine {
+    width: 15px;
+}
+
+#nine:checked~.button .nine {
+    width: 35px;
+}
+
+#nine:checked~.button .one,
+#nine:checked~.button .two,
+#nine:checked~.button .three,
+#nine:checked~.button .four,
+#nine:checked~.button .five,
+#nine:checked~.button .six,
+#nine:checked~.button .seven,
+#nine:checked~.button .eight {
+    width: 15px;
+}
+
+
+
+
+
+
+
+input[type="radio"] {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .main-card .cards .card {
+        margin: 20px 0 10px 0;
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .main-card .cards .card {
+        /* margin: 20px 0 10px 0; */
+        width: 100%;
+    }
+
+    .main-card .cards {
+        justify-content: center;
+    }
+}

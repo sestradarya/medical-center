@@ -1,0 +1,150 @@
+@import url("./reset.css");
+
+.about-us-page {
+    height: 460px;
+    background: url("../../img/background-top-about_us3-3.jpg") no-repeat top;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us-about-us {
+    color: #000;
+}
+
+.subtext {
+    font-size: 1.125rem;
+    padding-bottom: 1.25rem;
+    line-height: 1.5rem;
+    text-indent: 20px;
+}
+
+.specialization-content{
+    font-size: 1.2rem;
+    line-height: 1.35rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    line-height: 2;
+    font-size: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.about-us-equipment p{
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+}
+
+a{
+    color: inherit;
+}
+
+@media (max-width: 800px) {
+    .container {
+        max-width: 660px;
+    }
+
+    .main-slider-title {
+        margin-bottom: 35px;
+    }
+
+    .about-us-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-us {
+        margin: 15px;
+        padding: 20px;
+    }
+
+    .about-us-content {
+        padding: 15px 0 0 0;
+        line-height: 20px;
+    }
+
+    .about-us-title {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .about-us-image {
+        max-width: 280px;
+    }
+
+    .sign-up-text {
+        width: 100%;
+    }
+
+    .sign-up button {
+        width: 38%;
+    }
+
+    .contacts-content {
+        flex-direction: column;
+        line-height: 18px;
+    }
+
+    .contacts-map {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 1rem 0 0 0;
+    }
+}
+
+@media (max-width: 505px) {
+    html {
+        font-size: 12px;
+    }
+
+    nav ul li a {
+        font-size: 1.8rem;
+    }
+
+    .sign-up button {
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

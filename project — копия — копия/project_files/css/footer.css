@@ -1,0 +1,90 @@
+footer {
+    background-color: #B0B08F;
+    color: #fff;
+    line-height: 1.5rem;
+    margin-top: 1.875rem;
+    padding: 1.875rem 1.25rem 0 1.25rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .logo-text {
+    color: #fff;
+}
+
+.footer-center {}
+
+.right-container {
+    padding-left: 20px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-center p {
+    padding-top: 0.625rem;
+}
+
+.footer-center p a {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-right {
+    padding-left: 25px;
+}
+
+.footer-right p {
+    padding-top: 0.75rem;
+}
+
+.med {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.tel a {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sch {
+    font-size: 1.125rem;
+    color: #000;
+}
+
+.addr {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.copy {
+    text-align: center;
+    color: #666666;
+    font-size: 0.875rem;
+    padding: 3.5rem 0 2rem 0;
+}
+
+.right-container a:hover {
+    color: #89896e;
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 800px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .right-container {
+        width: 100%;
+        padding: 1rem 0 0 0;
+    }
+}

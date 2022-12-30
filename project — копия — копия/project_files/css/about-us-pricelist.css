@@ -1,0 +1,106 @@
+.about-us-pricelist-page {
+    height: 460px;
+    background: url("../../img/background-top-pricelist.jpg") no-repeat top;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-us-pricelist {
+    margin-bottom: 2.5rem;
+}
+
+
+.pricelist-container nav {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.325);
+}
+
+
+.chapter {
+    padding: 1.25rem;
+    background: #B0B08F;
+    color: white;
+    font-size: 1.5rem;
+    font-variant: small-caps;
+    cursor: pointer;
+    display: block;
+}
+
+.chapter::after {
+    float: right;
+    right: 10%;
+    content: "+";
+}
+
+/* .slide li {
+    padding: 30px;
+} */
+
+.price01,
+.price02,
+.price03,
+.price04,
+.price05,
+.price06 {
+    clear: both;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+}
+
+#price01,
+#price02,
+#price03,
+#price04,
+#price05,
+#price06 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#price01:checked+.price01,
+#price02:checked+.price02,
+#price03:checked+.price03,
+#price04:checked+.price04,
+#price05:checked+.price05,
+#price06:checked+.price06 {
+    height: auto;
+}
+
+.prices ul {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.13);
+}
+
+.prices ul li {
+    padding: 1rem 0.75rem 1rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px #B0B08F solid;
+    border-bottom: none;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.prices ul li span:last-child {
+    margin-left: 0.8rem;
+    text-align: right;
+}
+
+.announcement {
+    padding: 2.8rem;
+    border: 2px solid #D1BFAF;
+    font-size: 1.25rem;
+}
+
+.announcement p {
+    padding-bottom: 1.25rem;
+}
+
+.announcement p a {
+    white-space: nowrap;
+    color: #000;
+    font-weight: 600;
+}

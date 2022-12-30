@@ -1,0 +1,11 @@
+.contacts-page {
+    height: 460px;
+    background: url("../../img/background-top-01.jpg") no-repeat top;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.contacts-content{
+    margin: 1.875rem 0;
+}

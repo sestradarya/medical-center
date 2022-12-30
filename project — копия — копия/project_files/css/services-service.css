@@ -1,0 +1,45 @@
+.services-alergology-page {
+    background: url("../../img/alergology.jpg") no-repeat top;
+}
+
+.services-cosmetology-page {
+    background: url("../../img/cosmetology.jpg") no-repeat top;
+}
+
+.services-dermatology-page {
+    background: url("../../img/dermatology.jpg") no-repeat top;
+}
+
+.services-podology-page {
+    background: url("../../img/podology.jpg") no-repeat top;
+}
+
+.services-trichology-page {
+    background: url("../../img/trichology.jpg") no-repeat top;
+}
+
+.services-venerology-page {
+    background: url("../../img/venerology.jpg") no-repeat top;
+}
+
+.services-page {
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-list ul li {
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+.service {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.service-description p {}
+
+.service-list {}
+
+.service-specialization {}
