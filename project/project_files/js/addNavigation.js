@@ -1,5 +1,5 @@
-document.getElementById('navigation').innerHTML = `
-            <a href="./main.html">
+document.getElementById("navigation").innerHTML = `
+            <a href="../../../index.html">
                 <div class="logo">
                     <img src="../../img/logo-green.png" class="logo-image" alt="">
                     <h1 class="logo-text">Chamomile</h1>
@@ -33,4 +33,4 @@ document.getElementById('navigation').innerHTML = `
                     <li><a href="./contacts.html">Контакты</a> </li>
                     <li><a href="./reviews.html">Отзывы</a> </li>
                 </ul>
-            </nav>`
+            </nav>`;

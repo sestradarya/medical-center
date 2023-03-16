@@ -1,8 +1,8 @@
-document.getElementById('footer').innerHTML = `
+document.getElementById("footer").innerHTML = `
 <div class="container">
 <div class="footer-container">
     <div class="left-container">
-        <a href="./main.html">
+        <a href="../../../index.html">
             <div class="logo">
                 <img src="../../img/logo-white.png" class="logo-image" alt="">
                 <h1 class="logo-text">Chamomile</h1>
@@ -52,4 +52,4 @@ document.getElementById('footer').innerHTML = `
     <p>© ТОВ Медичний центр «Камомиль», 2022. Всi права захищенi</p>
 </div>
 </div>
-`
+`;
