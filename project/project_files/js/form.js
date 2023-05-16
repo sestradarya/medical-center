@@ -21,7 +21,7 @@ document.getElementById("form").innerHTML = `
                 <fieldset>
                     <legend> Записаться на консультацию</legend>
                     <input id="name" type="text" name="field1" placeholder="Ваше имя *" required>
-                    <input id="phone" type="number" name="field2" placeholder="Ваш номер телефона *" required>
+                    <input id="phone" type="text" name="field2" placeholder="Ваш номер телефона *" required>
                     <input id="email" type="email" name="field2" placeholder="Ваш еmail">
                     
                     <label for="service">Услуга: *</label>
@@ -202,12 +202,6 @@ dateField.addEventListener("change", () => {
   setTimesEl();
 });
 
-// window.addEventListener('click', (event) => {
-//     if (event.target == formEl) {
-//         console.log('ok')
-//     }
-// })
-
 export default function getInfoString() {
   return {
     name: nameField.value,
@@ -221,6 +215,29 @@ export default function getInfoString() {
   };
 }
 
+const validatePhoneNumber = (number) => {
+  const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im;
+  return re.test(number);
+};
+
+phoneField.addEventListener("keyup", (event) => {
+  if (validatePhoneNumber(event.target.value)) {
+    phoneField.style.color = "green";
+  } else phoneField.style.color = "rgb(154, 3, 3)";
+});
+
+const validateEmail = (email) => {
+  const re =
+    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+
+emailField.addEventListener("keyup", (event) => {
+  if (validateEmail(event.target.value)) {
+    emailField.style.color = "green";
+  } else emailField.style.color = "rgb(154, 3, 3)";
+});
+
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
 
@@ -228,10 +245,16 @@ submitButton.addEventListener("click", (event) => {
   const appInfo = getInfoString();
   console.log(appInfo);
   if (
-    (appInfo.name !== "") &
-    (appInfo.phone !== "") &
-    (appInfo.service !== "") &
-    (appInfo.date !== "")
+    validateEmail(emailField.value) === false ||
+    validatePhoneNumber(phoneField.value) === false
+  ) {
+    document.getElementById("warning").innerText =
+      "Заполните все поля корректно";
+  } else if (
+    appInfo.name !== "" &&
+    appInfo.phone !== "" &&
+    appInfo.service !== "" &&
+    appInfo.date !== ""
   ) {
     document.getElementById("warning").innerText = "";
     setTimeout(() => {
